@@ -31,7 +31,7 @@ function check(a,b)
     return(((a%10===0 && b%10===0) || (a%10===0 || b%10===0))? true : false  );
 }
 
-console.log(check(23,47));
+console.log(check(26,47));
 
 
 
