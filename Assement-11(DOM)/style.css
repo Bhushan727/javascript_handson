@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 80%;
+    height: auto;
+    background-color: aquamarine;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.card{
+    width: 25%;
+    height: 200px;
+    background-color: blue;
+    margin: 50px;
+}
+
+#click{
+    margin:20px 200px;
+}
