@@ -56,8 +56,38 @@ console.log(heads1[1].outerHTML);
 //Ques 8
 //Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
 
- 
+ var times = document.getElementById('tmes');
 
+ 
+ function updateTime(){
+    let currTime = new Date();
+    const hr = currTime.getHours();
+    const min = currTime.getMinutes();
+    const sec = currTime.getSeconds();
+    document.getElementById('time').textContent = `hr:${hr} min:${min} sec:${sec}`;
+ }
+ setInterval(updateTime,500);
+
+//Ques 9
+//Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected
+
+var year = document.getElementById('years');
+
+var yearValue = year.options[year.selectedIndex].text;
+document.getElementById('selects').innerHTML = yearValue;
+
+function newYear(){
+    yearValue = year.options[year.selectedIndex].text;
+    
+    document.getElementById('selects').innerHTML = yearValue;
+}
+
+
+// Ques 10 
+//Create a form having name ,email, phone no. , birth year 
+// Add validations - phone no. should start with 91 , it should be 10 digits
+// email should be domain prepbytes.com
+// birth year should be > 95
 
 
 
